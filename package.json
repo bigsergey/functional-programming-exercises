@@ -1,0 +1,19 @@
+{
+  "name": "functional-programming-exercises",
+  "version": "0.0.1",
+  "description": "Exercises for learning functional programming in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigsergey/functional-programming-exercises.git"
+  },
+  "author": "Sergey Bolshov, bolszow@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigsergey/functional-programming-exercises/issues"
+  },
+  "homepage": "https://github.com/bigsergey/functional-programming-exercises#readme"
+}
