@@ -1,0 +1,6 @@
+ {
+  "extends": "apptension",
+  "env": {
+    "es6": true
+  }
+}

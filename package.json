@@ -23,7 +23,9 @@
     ]
   },
   "devDependencies": {
-    "ava": "^0.16.0"
+    "ava": "^0.16.0",
+    "babel-eslint": "^6.1.2",
+    "eslint-config-apptension": "^1.1.1"
   },
   "dependencies": {
     "ramda": "^0.22.1"
