@@ -1,6 +1,6 @@
 import test from 'ava';
 
-import {add, curryAdd} from '../firstExercise';
+import {add, curryAdd} from '../exampleFunction';
 
 test('should be a function', t => {
   t.is(typeof add, 'function');
