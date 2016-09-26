@@ -17,6 +17,11 @@ To watch tests
 $ npm run test:watch
 ```
 
+To run webpack-dev-server
+```
+$npm start
+```
+then open [localhost:8080](http://localhost:8080).
 
 ## Exercises for learning functional programming in JS
 
