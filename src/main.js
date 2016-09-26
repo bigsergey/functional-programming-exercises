@@ -2,9 +2,7 @@ import 'babel-polyfill';
 
 import {add} from './exampleFunction';
 
-import {words} from './2ndCurrying'
-import {increaseArray} from './2ndCurrying'
-import {smallestNumber} from './2ndCurrying'
+import {words, increaseArray, smallestNumber} from './2ndCurrying'
 
 console.log(add(1, 3));
 
