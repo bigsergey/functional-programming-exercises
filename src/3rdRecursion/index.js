@@ -6,3 +6,14 @@ export function forEach(array, callback = () => {}, i = 0) {
   callback(array[i], i);
   forEach(array, callback, ++i);
 }
+
+function flatMapDeep(array, tmpArray = []) {
+  _.forEach(array, (item) => {
+    if(_.isArray(item)) {
+      flatMapDeep(item, tmpArray);
+    } else {
+      tmpArray.push(item)
+    }
+  });
+  return tmpArray;
+}
