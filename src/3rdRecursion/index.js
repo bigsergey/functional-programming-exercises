@@ -7,7 +7,7 @@ export function forEach(array, callback = () => {}, i = 0) {
   forEach(array, callback, ++i);
 }
 
-function flatMapDeep(array, tmpArray = []) {
+export function flatMapDeep(array, tmpArray = []) {
   _.forEach(array, (item) => {
     if(_.isArray(item)) {
       flatMapDeep(item, tmpArray);
