@@ -16,7 +16,7 @@ export function flatMapDeep(array, tmpArray = []) {
     } else {
       tmpArray.push(item);
     }
-  }), array)
+  }), array);
   return tmpArray;
 }
 
