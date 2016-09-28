@@ -1,5 +1,6 @@
 import R from 'ramda';
 import Rx from 'rx';
+import $ from 'jquery';
 
 import {logArray, fetchData} from './utils';
 
@@ -16,4 +17,9 @@ const prepareReleases = R.compose(
   R.prop('release-groups')
 );
 
-const tracks = fetchData(URL, QUERY).subscribe(prepareReleases);
+const $results = $('#albums');
+
+const tracks = fetchData(URL, QUERY).subscribe(
+  res => $.each(prepareReleases(res), (_, value) => $(`<li>${value}</li>`).appendTo($results)),
+  err => $(`<li>${err}</li>`).appendTo($results)
+);

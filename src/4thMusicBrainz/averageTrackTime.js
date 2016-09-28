@@ -1,5 +1,6 @@
 import R from 'ramda';
 import Rx from 'rx';
+import $ from 'jquery';
 
 import {log, fetchData} from './utils';
 
@@ -12,5 +13,10 @@ const extractTracks = R.compose(R.map(R.prop('length')), R.flatten, R.map(R.prop
 
 const avgTrackTime = R.compose(log, avg, extractTracks);
 
-const tracks = fetchData(URL, QUERY).subscribe(avgTrackTime);
+const $results = $('#avg-track-length');
+
+const tracks = fetchData(URL, QUERY).subscribe(
+  res => $(`<span>${avgTrackTime(res)}ms</span>`).appendTo($results),
+  err => $(`<span>${err}</span>`).appendTo($results)
+);
 
