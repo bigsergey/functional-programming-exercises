@@ -8,12 +8,12 @@ export function forEach(array, callback = () => {}, i = 0) {
 }
 
 export function flatMapDeep(array, tmpArray = []) {
-  _.forEach(array, (item) => {
-    if(_.isArray(item)) {
+  R.forEach((item => {
+    if(R.isArrayLike(item)) {
       flatMapDeep(item, tmpArray);
     } else {
-      tmpArray.push(item)
+      tmpArray.push(item);
     }
-  });
+  }), array)
   return tmpArray;
 }
