@@ -1,4 +1,6 @@
-export function forEach(array, callback = () => {}, i = 0) { 
+import R from 'ramda';
+
+export function forEach(array, callback = () => {}, i = 0) {
   if (i === array.length) {
     return;
   }
@@ -17,3 +19,5 @@ export function flatMapDeep(array, tmpArray = []) {
   }), array)
   return tmpArray;
 }
+
+
