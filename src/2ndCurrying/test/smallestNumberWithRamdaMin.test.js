@@ -11,7 +11,7 @@ test('should return smallest number -7', t => {
 });
 
 test('should return smallest number 0', t => {
-  t.deepEqual(smallestNumberWithRamdaMin([, 0]), 0);
+  t.deepEqual(smallestNumberWithRamdaMin([undefined, 0]), 0);
 });
 
 test('should return smallest number 0', t => {

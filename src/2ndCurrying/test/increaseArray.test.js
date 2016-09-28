@@ -11,6 +11,10 @@ test('should return increase value by 2', t => {
   t.deepEqual(increaseArray(2, [1, 2]), [3, 4]);
 });
 
+test('should return increase value by 10', t => {
+  t.deepEqual(increaseArray(10)([1, 2]), [11, 12]);
+});
+
 test('should return increase value by -2', t => {
   t.deepEqual(increaseArray(-2, [5, 9]), [3, 7]);
 });

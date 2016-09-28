@@ -11,11 +11,11 @@ test('should return smallest number -5', t => {
 });
 
 test('should return smallest number 0', t => {
-  t.deepEqual(smallestNumber([, 0]), 0);
+  t.deepEqual(smallestNumber([undefined, 0]), 0);
 });
 
 test('should return smallest number -10', t => {
-  t.deepEqual(smallestNumber([-10, 1, 2, 3, 4, ]), -10);
+  t.deepEqual(smallestNumber([-10, 1, 2, 3, 4,]), -10);
 });
 
 test('should return smallest number Infinity', t => {
