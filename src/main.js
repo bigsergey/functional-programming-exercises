@@ -1,10 +1,8 @@
 import 'babel-polyfill';
 
-import {add} from './exampleFunction';
+import './4thMusicBrainz';
 
 import {words, increaseArray, smallestNumber, smallestNumberWithRamdaMin} from './2ndCurrying'
-
-console.log(add(1, 3));
 
 console.log(words('a b c'));
 console.log(increaseArray(1)([1, 2, 3, 4]));
