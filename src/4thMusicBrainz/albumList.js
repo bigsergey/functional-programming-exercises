@@ -10,6 +10,7 @@ const isNotCompilation = R.compose(R.isEmpty, R.filter(R.equals('Compilation')),
 
 const prepareReleases = R.compose(
   logArray,
+  R.map(R.init),
   R.filter(isNotCompilation),
   R.map(R.props(['title', 'first-release-date', 'secondary-types'])),
   R.prop('release-groups')
