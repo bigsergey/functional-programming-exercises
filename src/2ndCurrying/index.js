@@ -8,6 +8,6 @@ const less = (a, b) => {
   return a < b ? a : b;
 };
 
-export const smallestNumber = (array) => R.reduce(less, Infinity, array);
+export const smallestNumber = R.reduce(less, Infinity);
 
-export const smallestNumberWithRamdaMin = (array) => R.reduce(R.min, Infinity, array);
+export const smallestNumberWithRamdaMin = R.reduce(R.min, Infinity);

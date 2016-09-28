@@ -14,4 +14,8 @@ test('should return split array', t => {
   t.deepEqual(words('a b'), ['a', 'b']);
 });
 
+test('should return split array', t => {
+  t.deepEqual(words('a\nb'), ['a\nb']);
+});
+
 
