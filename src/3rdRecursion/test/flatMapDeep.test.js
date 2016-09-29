@@ -15,5 +15,5 @@ test('should return array', t => {
 });
 
 test('should return array #2', t => {
-    t.deepEqual(flatMapDeep([1,2,[3],4,[[5]]]), [1,2,3,4,5]);
+    t.deepEqual(flatMapDeep([1,2,[3, [[2]]],4,[[5]]]), [1,2,3,2,4,5]);
 });
